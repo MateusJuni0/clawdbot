@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.1.30",
-    "lastTouchedAt": "2026-02-13T00:48:26.053Z"
+    "lastTouchedAt": "2026-02-13T02:11:06.453Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-13T00:48:26.043Z",
+    "lastRunAt": "2026-02-13T02:11:06.442Z",
     "lastRunVersion": "2026.1.30",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -21,16 +21,7 @@
       },
       "google-antigravity:mjnoliveira.mateus@gmail.com": {
         "provider": "google-antigravity",
-        "mode": "oauth",
-        "email": "mjnoliveira.mateus@gmail.com"
-      },
-      "groq:default": {
-        "provider": "groq",
-        "mode": "api_key"
-      },
-      "openrouter:default": {
-        "provider": "openrouter",
-        "mode": "api_key"
+        "mode": "oauth"
       }
     }
   },
@@ -38,27 +29,96 @@
     "defaults": {
       "model": {
         "fallbacks": [
-          "openrouter/auto",
-          "google/gemini-2.5-flash-lite",
-          "google/gemini-2.5-flash",
+          "google/gemini-flash-pro-preview",
+          "google/gemini-3-flash-preview",
+          "anthropic/claude-sonnet-4-5",
+          "google-antigravity/claude-opus-4-5-thinking",
+          "amazon-bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0",
+          "amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "anthropic/claude-opus-4-5-20251101",
+          "vercel-ai-gateway/perplexity/sonar-pro",
+          "vercel-ai-gateway/google/gemini-3-pro-preview",
+          "vercel-ai-gateway/google/gemini-3-flash",
+          "vercel-ai-gateway/anthropic/claude-sonnet-4.5",
+          "vercel-ai-gateway/anthropic/claude-opus-4.5",
+          "openrouter/google/gemini-3-pro-preview",
+          "openrouter/google/gemini-3-flash-preview",
+          "openrouter/anthropic/claude-sonnet-4.5",
+          "openrouter/anthropic/claude-opus-4.5",
+          "amazon-bedrock/eu.anthropic.claude-opus-4-5-20251101-v1:0",
+          "amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0",
+          "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+          "amazon-bedrock/eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+          "anthropic/claude-haiku-4-5-20251001",
+          "anthropic/claude-haiku-4-5",
+          "anthropic/claude-opus-4-5",
+          "azure-openai-responses/gpt-5-pro",
+          "azure-openai-responses/gpt-5.2-pro",
+          "github-copilot/claude-opus-4.5",
+          "github-copilot/claude-sonnet-4.5",
+          "github-copilot/gemini-3-pro-preview",
+          "github-copilot/gemini-3-flash-preview",
           "google/gemini-3-pro-preview",
-          "google/gemini-3-flash-preview"
+          "google-antigravity/gemini-3-flash",
+          "google-antigravity/claude-sonnet-4-5-thinking",
+          "google-antigravity/claude-sonnet-4-5"
         ],
         "primary": "google/gemini-3-flash-preview"
       },
       "models": {
-        "openrouter/auto": {
-          "alias": "OpenRouter"
+        "google/gemini-flash-pro-preview": {
+          "alias": "gemini-flash",
+          "params": {
+            "thinking": {}
+          }
+        },
+        "google/gemini-3-flash-preview": {
+          "alias": "gemini-flash",
+          "params": {
+            "thinking": {}
+          }
+        },
+        "anthropic/claude-sonnet-4-5": {
+          "alias": "sonnet",
+          "params": {
+            "cacheControlTtl": "1h"
+          }
         },
         "google-antigravity/claude-opus-4-5-thinking": {},
-        "google/gemini-2.5-flash-lite": {},
-        "google/gemini-2.5-flash": {},
+        "amazon-bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0": {},
+        "amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0": {},
+        "anthropic/claude-opus-4-5-20251101": {},
+        "vercel-ai-gateway/perplexity/sonar-pro": {},
+        "vercel-ai-gateway/google/gemini-3-pro-preview": {},
+        "vercel-ai-gateway/google/gemini-3-flash": {},
+        "vercel-ai-gateway/anthropic/claude-sonnet-4.5": {},
+        "vercel-ai-gateway/anthropic/claude-opus-4.5": {},
+        "openrouter/google/gemini-3-pro-preview": {},
+        "openrouter/google/gemini-3-flash-preview": {},
+        "openrouter/anthropic/claude-sonnet-4.5": {},
+        "openrouter/anthropic/claude-opus-4.5": {},
+        "google-antigravity/gemini-3-pro-high": {},
+        "amazon-bedrock/eu.anthropic.claude-opus-4-5-20251101-v1:0": {},
+        "amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0": {},
+        "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0": {},
+        "amazon-bedrock/eu.anthropic.claude-sonnet-4-5-20250929-v1:0": {},
+        "anthropic/claude-haiku-4-5-20251001": {},
+        "anthropic/claude-haiku-4-5": {},
+        "anthropic/claude-opus-4-5": {
+          "alias": "opus"
+        },
+        "azure-openai-responses/gpt-5-pro": {},
+        "azure-openai-responses/gpt-5.2-pro": {},
+        "github-copilot/claude-opus-4.5": {},
+        "github-copilot/claude-sonnet-4.5": {},
+        "github-copilot/gemini-3-pro-preview": {},
+        "github-copilot/gemini-3-flash-preview": {},
         "google/gemini-3-pro-preview": {
           "alias": "gemini"
         },
-        "google/gemini-3-flash-preview": {
-          "alias": "gemini-flash"
-        }
+        "google-antigravity/gemini-3-flash": {},
+        "google-antigravity/claude-sonnet-4-5-thinking": {},
+        "google-antigravity/claude-sonnet-4-5": {}
       },
       "workspace": "C:\\Users\\mjnol\\.openclaw\\workspace",
       "contextPruning": {
@@ -78,17 +138,6 @@
       }
     }
   },
-  "tools": {
-    "web": {
-      "search": {
-        "enabled": true,
-        "apiKey": "BSAf4a0D0hB8sLLO-PFo1EM7-VaNuS7"
-      },
-      "fetch": {
-        "enabled": false
-      }
-    }
-  },
   "messages": {
     "ackReactionScope": "group-mentions"
   },
@@ -96,28 +145,12 @@
     "native": "auto",
     "nativeSkills": "auto"
   },
-  "hooks": {
-    "internal": {
-      "enabled": true,
-      "entries": {
-        "boot-md": {
-          "enabled": true
-        },
-        "command-logger": {
-          "enabled": true
-        },
-        "session-memory": {
-          "enabled": true
-        }
-      }
-    }
-  },
   "channels": {
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
       "botToken": "8592874626:AAGws2KeVlo7T2C55mkm-npw3Vlok83RIS4",
-      "groupPolicy": "open",
+      "groupPolicy": "allowlist",
       "streamMode": "partial"
     }
   },
@@ -132,8 +165,7 @@
     "tailscale": {
       "mode": "off",
       "resetOnExit": false
-    },
-    "nodes": {}
+    }
   },
   "skills": {
     "install": {
@@ -152,6 +184,22 @@
       },
       "google-antigravity-auth": {
         "enabled": true
+      }
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
       }
     }
   }
