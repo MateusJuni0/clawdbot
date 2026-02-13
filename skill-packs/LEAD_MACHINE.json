@@ -1,0 +1,103 @@
+{
+  "pack_name": "LEAD_MACHINE",
+  "version": "1.0",
+  "description": "Prospecção automatizada, scraping e vendas (modo NERO)",
+  "priority": "high",
+  "cost_tokens_estimate": 15000,
+  "cost_eur_estimate": 1.80,
+  "auto_load": false,
+  "skills": [
+    {
+      "name": "crawlee",
+      "path": "skills/skills/crawlee",
+      "required": true,
+      "purpose": "Scraping em massa (Google Maps, sites, directórios)",
+      "tokens_estimate": 2500
+    },
+    {
+      "name": "playwright",
+      "path": "skills/skills/playwright",
+      "required": true,
+      "purpose": "Scraping de redes sociais (Instagram, Facebook) com simulação humana",
+      "tokens_estimate": 4000
+    },
+    {
+      "name": "mailhunter",
+      "path": "skills/skills/mailhunter",
+      "required": true,
+      "purpose": "Descobrir emails de decisões (CEOs, donos)",
+      "tokens_estimate": 1500
+    },
+    {
+      "name": "email-verification",
+      "path": "skills/skills/email-verification",
+      "required": true,
+      "purpose": "Validar emails antes de enviar (evitar bounce e queimar domínio)",
+      "tokens_estimate": 1000
+    },
+    {
+      "name": "email-smtp",
+      "path": "skills/skills/email-smtp",
+      "required": true,
+      "purpose": "Enviar propostas comerciais em massa",
+      "tokens_estimate": 1200
+    },
+    {
+      "name": "lead-discovery-wrapper",
+      "path": "skills/skills/lead-discovery-wrapper",
+      "required": true,
+      "purpose": "Wrapper do NERO para descoberta inteligente de leads",
+      "tokens_estimate": 1800
+    },
+    {
+      "name": "lead-scoring",
+      "path": "skills/skills/lead-scoring",
+      "required": true,
+      "purpose": "Qualificar leads (0-100) por potencial de fechamento",
+      "tokens_estimate": 1200
+    },
+    {
+      "name": "n8n",
+      "path": "skills/skills/n8n",
+      "required": true,
+      "purpose": "Orquestrar workflows de prospecção automatizada",
+      "tokens_estimate": 1500
+    },
+    {
+      "name": "rate-limiter",
+      "path": "skills/skills/rate-limiter",
+      "required": true,
+      "purpose": "Proteção anti-ban (delays, rate limits)",
+      "tokens_estimate": 300
+    }
+  ],
+  "use_cases": [
+    "Buscar clínicas/restaurantes sem site em Lisboa",
+    "Prospectar Instagram de pequenos negócios (<1k seguidores)",
+    "Scraping Google Maps por categoria + localização",
+    "Descobrir emails de decisões e enviar propostas",
+    "Qualificar leads automaticamente (score 0-100)",
+    "Campanhas de cold email segmentadas"
+  ],
+  "alternative_simple": "Posso fazer busca manual básica sem automação (1-5 leads por vez, custo 0,10€).",
+  "nero_mode": true,
+  "safety_features": [
+    "Rate limiting automático",
+    "Delays aleatórios (anti-detecção)",
+    "Validação de emails (anti-bounce)",
+    "User-agent rotation",
+    "Respect robots.txt"
+  ],
+  "output_format": {
+    "leads_csv": "workspace/leads/[data]-[categoria].csv",
+    "columns": [
+      "nome_empresa",
+      "email",
+      "telefone",
+      "instagram",
+      "website",
+      "score (0-100)",
+      "notas"
+    ]
+  }
+}
