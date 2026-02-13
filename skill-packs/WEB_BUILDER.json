@@ -1,0 +1,70 @@
+{
+  "pack_name": "WEB_BUILDER",
+  "version": "1.0",
+  "description": "Criação de sites (simples a 3D premium) para projetos de 500-2.000€",
+  "priority": "high",
+  "cost_tokens_estimate": 12000,
+  "cost_eur_estimate": 1.50,
+  "auto_load": false,
+  "playbook": "workspace/playbooks/WEBSITE_PREMIUM_3D.md",
+  "skills": [
+    {
+      "name": "filesystem",
+      "path": "skills/skills/filesystem",
+      "required": true,
+      "purpose": "Base para criar estrutura de arquivos do projeto",
+      "tokens_estimate": 800
+    },
+    {
+      "name": "antigravity-image-gen",
+      "path": "skills/skills/antigravity-image-gen",
+      "required": true,
+      "purpose": "Gerar logos, backgrounds, texturas e assets premium via IA",
+      "tokens_estimate": 3000
+    },
+    {
+      "name": "image-processing",
+      "path": "skills/skills/image-processing",
+      "required": true,
+      "purpose": "Otimizar imagens (WebP, compressão) para carregamento <2s",
+      "tokens_estimate": 2500
+    },
+    {
+      "name": "playwright",
+      "path": "skills/skills/playwright",
+      "required": true,
+      "purpose": "Acessar sites de referência e extrair estrutura/estilo",
+      "tokens_estimate": 4000
+    },
+    {
+      "name": "seo-audit",
+      "path": "skills/skills/seo-audit",
+      "required": false,
+      "purpose": "Validar SEO antes do deploy (Google-ready)",
+      "tokens_estimate": 1200
+    },
+    {
+      "name": "pdf-generator",
+      "path": "skills/skills/pdf-generator",
+      "required": false,
+      "purpose": "Gerar propostas comerciais após venda",
+      "tokens_estimate": 500
+    }
+  ],
+  "use_cases": [
+    "Sites institucionais (clínicas, restaurantes, empresas)",
+    "Landing pages de alta conversão",
+    "Sites 3D interativos (menus, portfolios)",
+    "Sites com animações WebGL/Three.js",
+    "Propostas visuais para clientes"
+  ],
+  "alternative_simple": "Posso criar site básico HTML/CSS sem assets customizados nem otimizações avançadas (qualidade menor, custo 0,10€).",
+  "project_architect_mode": true,
+  "quality_checklist": [
+    "Performance: carregamento <2s",
+    "Responsivo: mobile, tablet, desktop",
+    "SEO: meta tags, sitemap, robots.txt",
+    "Acessibilidade: ARIA labels, contraste",
+    "Deploy: URL funcionando com SSL"
+  ]
+}
