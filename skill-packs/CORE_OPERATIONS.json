@@ -1,0 +1,75 @@
+{
+  "pack_name": "CORE_OPERATIONS",
+  "version": "1.0",
+  "description": "Skills essenciais para operação básica e administrativa da CMTecnologia",
+  "priority": "medium",
+  "cost_tokens_estimate": 6000,
+  "cost_eur_estimate": 0.70,
+  "auto_load": false,
+  "skills": [
+    {
+      "name": "filesystem",
+      "path": "skills/skills/filesystem",
+      "required": true,
+      "purpose": "Criar, editar e manipular arquivos no workspace",
+      "tokens_estimate": 800
+    },
+    {
+      "name": "antigravity-rotator",
+      "path": "skills/skills/antigravity-rotator",
+      "required": true,
+      "purpose": "Manter cérebro ativo durante operações longas",
+      "tokens_estimate": 600
+    },
+    {
+      "name": "database-client",
+      "path": "skills/skills/database-client",
+      "required": true,
+      "purpose": "Conectar e manipular PostgreSQL/Supabase",
+      "tokens_estimate": 1000
+    },
+    {
+      "name": "json-processor",
+      "path": "skills/skills/json-processor",
+      "required": true,
+      "purpose": "Processar e transformar dados JSON",
+      "tokens_estimate": 700
+    },
+    {
+      "name": "csv-xlsx-handler",
+      "path": "skills/skills/csv-xlsx-handler",
+      "required": true,
+      "purpose": "Importar/exportar arquivos CSV e Excel",
+      "tokens_estimate": 900
+    },
+    {
+      "name": "scheduler",
+      "path": "skills/skills/scheduler",
+      "required": false,
+      "purpose": "Agendar tarefas automatizadas",
+      "tokens_estimate": 700
+    },
+    {
+      "name": "webhook-engine",
+      "path": "skills/skills/webhook-engine",
+      "required": false,
+      "purpose": "Receber e processar webhooks externos",
+      "tokens_estimate": 800
+    },
+    {
+      "name": "logger",
+      "path": "skills/skills/logger",
+      "required": true,
+      "purpose": "Sistema de logs para debugging e auditoria",
+      "tokens_estimate": 500
+    }
+  ],
+  "use_cases": [
+    "Organizar listas de leads em CSV",
+    "Salvar dados no banco de dados",
+    "Processar JSONs de APIs",
+    "Tarefas administrativas gerais",
+    "Logs e monitoring"
+  ],
+  "alternative_simple": "Posso fazer operações básicas sem skills, mas com limitações em persistência e processamento complexo."
+}
