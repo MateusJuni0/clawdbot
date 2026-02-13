@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.30",
+    "lastTouchedAt": "2026-02-13T00:48:26.053Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-13T00:48:26.043Z",
+    "lastRunVersion": "2026.1.30",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      },
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      },
+      "google-antigravity:mjnoliveira.mateus@gmail.com": {
+        "provider": "google-antigravity",
+        "mode": "oauth",
+        "email": "mjnoliveira.mateus@gmail.com"
+      },
+      "groq:default": {
+        "provider": "groq",
+        "mode": "api_key"
+      },
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "fallbacks": [
+          "openrouter/auto",
+          "google/gemini-2.5-flash-lite",
+          "google/gemini-2.5-flash",
+          "google/gemini-3-pro-preview",
+          "google/gemini-3-flash-preview"
+        ],
+        "primary": "google/gemini-3-flash-preview"
+      },
+      "models": {
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        },
+        "google-antigravity/claude-opus-4-5-thinking": {},
+        "google/gemini-2.5-flash-lite": {},
+        "google/gemini-2.5-flash": {},
+        "google/gemini-3-pro-preview": {
+          "alias": "gemini"
+        },
+        "google/gemini-3-flash-preview": {
+          "alias": "gemini-flash"
+        }
+      },
+      "workspace": "C:\\Users\\mjnol\\.openclaw\\workspace",
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "1h"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "thinkingDefault": "medium",
+      "heartbeat": {
+        "every": "30m"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "apiKey": "BSAf4a0D0hB8sLLO-PFo1EM7-VaNuS7"
+      },
+      "fetch": {
+        "enabled": false
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8592874626:AAGws2KeVlo7T2C55mkm-npw3Vlok83RIS4",
+      "groupPolicy": "open",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "b834575e10f2f623873728fe5452162a67d9aa454ee3d8d0"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {}
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "nano-banana-pro": {
+        "apiKey": "AIzaSyDILxJIODfDKPgqlJ9cwjT9uFExw72i2_I"
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      },
+      "google-antigravity-auth": {
+        "enabled": true
+      }
+    }
+  }
+}
