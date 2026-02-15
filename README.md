@@ -1,44 +1,24 @@
-# 🤖 ClawdBot - CMTecnologia
+# ClawdBot - O Cérebro da CMTecnologia 🏛️
 
-**ClawdBot** é o ecossistema de inteligência artificial de elite da **CMTecnologia**, projetado para automação ininterrupta, prospecção proativa de leads e orquestração de sistemas.
+ClawdBot é o orquestrador central de operações da CMTecnologia, construído sobre a arquitetura OpenClaw. Ele coordena uma força de elite de agentes autônomos para prospecção, automação de vendas e gestão de infraestrutura.
 
-## 🏛️ Núcleo de Operação: Dante & Nero
+## 🚀 Arquitetura Central
+- **Core:** Baseado no `pi-embedded-runner.js` para execução de alta performance.
+- **Skills:** Mais de 60 módulos especializados (n8n, Evolution API, Web Scraping, Lead Scoring).
+- **Identidade:** Protocolos rígidos de execução (`Dante`, `Nero`, `Lúcio`).
 
-O sistema opera sob uma hierarquia de agentes especializada:
-- **Dante (Arquiteto):** Estratégia macro, orquestração de checkpoints e interface humana.
-- **Nero (Hunter/Guardian):** Operações pesadas, prospecção ativa e execução de deploys na VPS.
-- **Lúcio (QA):** Auditoria técnica e validação de qualidade em cada entrega.
+## 🛠️ Tecnologias
+- **Engine:** Node.js / OpenClaw
+- **IA:** Google Gemini 2.0 Flash (Primário) & Anthropic Claude 3.5 Sonnet (Fallback)
+- **Infra:** Docker, PostgreSQL (Supabase), Evolution API (WhatsApp)
+- **Automação:** n8n (Workflow Engine)
 
-## 🚀 Funcionalidades Principais
-
-- **Prospecção Ativa:** Sistema de busca automática (Brave/Google) para identificar negócios sem presença digital e gerar propostas personalizadas.
-- **Menu 3D:** Geração de argumentos de venda para menus imersivos que aumentam o ticket médio de restaurantes.
-- **Guardião de Infraestrutura:** Monitoramento 4x ao dia de containers, backups e latência de APIs.
-- **Multi-Channel:** Operação via WhatsApp, Telegram e WebChat com sincronização de contexto.
-
-## 📁 Estrutura do Projeto
-
-- `/src`: Código central e orquestrador.
-- `/config`: Configurações de contexto e sistema.
-- `/skills`: Módulos de habilidades específicas (Scraping, WhatsApp, etc).
-- `/scripts`: Automações de backup e manutenção.
-- `/prompts`: Instruções de sistema e SOUL dos agentes.
-
-## 🛠️ Setup Rápido
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/MateusJuni0/clawdbot.git
-```
-2. Configure o `.env` (use o `.env.example` como base).
-3. Instale as dependências:
-```bash
-npm install
-```
-4. Inicie o sistema:
-```bash
-npm start
-```
+## 📁 Estrutura do Repositório
+- `/src`: Entry points e lógica do orquestrador.
+- `/config`: Configurações de sistema e segurança.
+- `/skills`: Módulos de ferramentas e agentes.
+- `/prompts`: System prompts e diretrizes de personalidade.
+- `/scripts`: Utilitários de deploy e manutenção.
 
 ---
-*Gerado autonomamente pelo Squad de Elite da CMTecnologia.*
+"O que não é medido, não é gerido. O que não é provado, não existe."
